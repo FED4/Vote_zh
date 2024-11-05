@@ -28,7 +28,7 @@ a{
 ::selection{
     background-color: #FF7E7E;
 }
-#设置等级{
+#设置等级 {
     display: none;
     position: absolute;
     z-index: 1;
@@ -39,26 +39,36 @@ a{
     box-shadow: 3px 6px 0 rgba(0,0,0,.1);
     border: 4px solid #000;
     text-align: center;
-    h2{
+
+    h2 {
         margin: 0;
         font-weight: normal;
         font-size: 26px;
         line-height: 40px;
         cursor: default;
     }
-    a{
+
+    a {
         line-height: 24px;
         cursor: pointer;
     }
+
     h2,
-    a{
+    a {
         display: block;
         padding: 4px 10px;
-        &[data-level="5"]{background:#FF7E7E;}
-        &[data-level="4"]{background:#FFB57E;}
-        &[data-level="3"]{background:#FFE57E;}
-        &[data-level="2"]{background:#A8FFBE;}
-        &[data-level="1"]{background:#88AEFF;}
+
+        &[data-level="3"] {
+            background: #936ba1;
+        }
+
+        &[data-level="2"] {
+            background: #FF7E7E;
+        }
+
+        &[data-level="1"] {
+            background: #88AEFF;
+        }
     }
 }
 .按钮{
